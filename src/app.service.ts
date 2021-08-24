@@ -18,7 +18,7 @@ export class AppService {
     }
 
    
-    const countryGet = countries.find((e)=> e.name.toLowerCase() === country )
+    const countryGet = countries.find((e)=> e.name.toLowerCase() === country.toLowerCase() )
     if(!countryGet){
       BAD_REQUEST(`Country "${country}" not found. Please verify annry again`);
     }
